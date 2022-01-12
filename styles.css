@@ -140,12 +140,11 @@ nav.sticky{
 } */
 .whatwedo{
     /* background:rgb(228, 227, 227); */
-    background:linear-gradient(rgba(238, 232, 232, 0.7),rgba(228,228,228,0.8)), url(./img/WE\ ARE.png);
-    background-color: #E2E2E1;
+    background:linear-gradient(rgba(238, 232, 232, 0.52   ),rgba(228,228,228,0.6)), url(./img/WE\ ARE.png);
     background-size: cover;
     padding: 90px 70px;
     height: 100%;
-}
+}js 
 .wedohead{
     text-align: center;
     font-size: 70px;
@@ -178,11 +177,30 @@ nav.sticky{
     width: 200px;
     padding: 15px;
 }
+.ouraimsection{
+    font-family: 'Epilogue', sans-serif;
+    padding: 72px 70px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(27, 27, 27);
+    /* background:linear-gradient(rgba(20, 20, 20, 0.6),rgba(14, 14, 14, 0.6)), url(./img/pexels-anthony-shkraba-7144199.jpg); */
+}
+.aimheading{
+    font-size: 53px;
+    color: darkgoldenrod;
+    font-weight: 600;
+}
+.aimpara{
+    font-size: 16px;
+    color: rgb(175, 174, 174);
+    margin: 30px;
+}
 .whatweoffer{
     height: 100%;
-    background:linear-gradient(rgba(255, 255, 255, 0.603),rgba(231, 230, 230, 0.89)), url(./img/wert-min.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background:linear-gradient(rgba(211, 211, 211, 0.644),rgba(212, 212, 212, 0.568)), url(./img/endless-constellation.svg);
+    /* background-size: cover;
+    background-attachment: fixed; */
     padding: 70px 70px;
 }
 .offerhead{
@@ -203,8 +221,8 @@ nav.sticky{
 .technologies{
     display: flex;
     width: 100%;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
@@ -225,6 +243,7 @@ nav.sticky{
     background-color: rgb(207, 204, 204);
     transition: 0.5s;
     box-shadow: none;
+    transform: translateY(15px);
 }
 .react-logo{
     height: 140px;
@@ -304,6 +323,7 @@ nav.sticky{
     }
     .officegallery:hover{
         opacity: 1;
+        color: black;
     }
     .maphead
     {
