@@ -11,7 +11,7 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 .herosection{
-    background: linear-gradient(rgba(14, 14, 14, 0.7),rgba(17, 17, 17, 0.8)),  url(./img/backwebsite.gif);
+    background: linear-gradient(rgba(24, 23, 23, 0.39),rgba(22, 21, 21, 0.521)),  url(./img/backwebsite.gif);
     height: 90vh;
     background-repeat: no-repeat;
 }
@@ -25,6 +25,7 @@ body{
     position: fixed;
     z-index: 1000;
     transition: 0.6s;
+    background-color: rgb(29, 29, 29);
 }
 .navbar:hover{
     /* background-color: white; */
@@ -140,11 +141,11 @@ nav.sticky{
 } */
 .whatwedo{
     /* background:rgb(228, 227, 227); */
-    background:linear-gradient(rgba(238, 232, 232, 0.52   ),rgba(228,228,228,0.6)), url(./img/WE\ ARE.png);
+    background:linear-gradient(rgba(238, 232, 232, 0.5),rgba(228,228,228,0.6)), url(./img/WE\ ARE.png);
     background-size: cover;
     padding: 90px 70px;
     height: 100%;
-}js 
+}
 .wedohead{
     text-align: center;
     font-size: 70px;
