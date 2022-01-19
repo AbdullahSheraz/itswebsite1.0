@@ -140,6 +140,7 @@ nav.sticky{
   .aboutdata1:hover{
       box-shadow: none;
       transition: 0.8s;
+      transform: translateY(-15px);
   }
   .missionhead{
       text-align: center;

@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/x-icon" href="./img/itslogo-min (1).png">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -22,6 +18,9 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" > -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <title>Itstechworld - Software and Web Solutions</title>
   </head>
   <body>
@@ -79,8 +78,50 @@
           Fortune 500 companies and enterprise clients untangle complex issues
           that always emerge during their digital evolution journey. Since 2002
           we have been a visionary and a reliable software engineering partner
-          for world-class brands.
+          for world-class brands. Check our <strong>Featured</strong> products.
         </p>
+      </div>
+      <div class="featuredprods">
+        <div class="prod1">
+            <div class="prodimage">
+                <img src="./img/download2.png" alt="erp">
+            </div>
+            <div class="proddescrip">
+                 <h1 class="productheading">Enterprise Resource Planner</h1>
+                 <p class="productpara">ERP is a tool for managing information, better reporting, 
+                   improved customer services, and modernized business processes.</p>
+            </div>
+        </div>
+        <div class="prod1">
+          <div class="prodimage">
+              <img src="./img/download3.png" alt="hms">
+          </div>
+          <div class="proddescrip">
+               <h1 class="productheading">Hospital Management System</h1>
+               <p class="productpara">Hospital management needs a lot of decision-making process, which is 
+                 extremely hard if there is no strong management system in place.</p>
+          </div>
+      </div>
+      <div class="prod1">
+        <div class="prodimage1">
+            <img src="./img/download4.png" alt="pos">
+        </div>
+        <div class="proddescrip">
+             <h1 class="productheading">Point <br> Of Sale</h1>
+             <p class="productpara">Our POS system is full-fledged retail management systems; they can do 
+               pretty incredible things. With implementation of FBR</p>
+        </div>
+    </div>
+    <div class="prod1">
+      <div class="prodimage1">
+          <img src="./img/download6.png" alt="ems">
+      </div>
+      <div class="proddescrip">
+           <h1 class="productheading">Education Management System</h1>
+           <p class="productpara">EMS is the best fit for any educational institution, vocational centre, 
+             small school, high school or college with management capabilities.</p>
+      </div>
+  </div>
       </div>
       <!-- <div class="companylogos">
         <img src="./img/logo4web-2.png" class="logo" />
@@ -143,13 +184,28 @@
         </div>
       </div>
     </section>
-      <h1 class="offerhead">Gallery</h1>
+      <h1 class="offerheadgallery">Gallery</h1>
       <div class="officeimg">
         <img src="./img/pexels-lisa-1957477.jpg" class="officegallery" />
         <img src="./img/pexels-djordje-petrovic-2102416.jpg" class="officegallery" />
         <img src="./img/pexels-oladimeji-ajegbile-4930018.jpg" class="officegallery" />
         <img src="./img/pexels-theo-3414792.jpg" class="officegallery" />
       </div>
+      <section class="clientysection">
+        <div class="container">
+             <h2 class="text-center font-weight-bold clientshead">Our Clients</h2>
+             <section style="margin: 20px 50px;" class="customer-logos slider">
+                 <div ><img src="./img/Acwc logo.jpg" alt="logo" class="logo"></div>
+                 <div ><img src="./img/1rachna-mono-1-min.png" alt="logo" class="logo"></div>
+                 <div ><img src="./img/1Logo-Kings-Mall_t-min.png" alt="logo" class="logo"></div>
+                 <div ><img src="./img/cfg fan-min.png" alt="logo" class="logo"></div>
+                 <div ><img src="./img/logo-master-min.png" alt="logo" class="logo"></div>
+                 <div ><img src="./img/logo4web-2.png" alt="logo" class="logo"></div>
+                 <div ><img src="./img/logo_allied-1-min.png" alt="logo" class="logo"></div>
+                 <div ><img src="./img/official-logoo-min.png" alt="logo" class="logo"></div>
+             </section>
+         </div>
+     </section>
     <h1
       class="maphead"
     >
@@ -275,6 +331,28 @@
       function closeNav() {
         document.getElementById("myNav").style.width = "0%";
       }
+      $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:3
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 2
+                }
+            }]
+        });
+    });
       // var loader = document.getElementById("preloader");
       // window.addEventListener("load", function () {
       //   loader.style.display = "none";
