@@ -105,6 +105,8 @@ nav.sticky{
   .servicesection{
       background: url(../img/World\ Map.svg);
       background-size: cover;
+      height: 100%;
+      padding: 30px;
   }
   /* .websection{
       background:linear-gradient(rgba(238, 232, 232, 0.7),rgba(228,228,228,0.8)), url(../img/WE\ ARE\ \(1\).png);
@@ -135,9 +137,12 @@ nav.sticky{
       width: 100%;
       display: flex;
       margin-top: 60px;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
   }
   .aboutdata1{
-      width: 33%;
+      width: 300px;
       height: 220px;
       padding: 30px;
       color: rgb(29, 27, 27);
@@ -145,9 +150,14 @@ nav.sticky{
       align-items: center;
       border-radius: 6px;
       text-align: center;
-      margin: 20px 60px;
+      /* margin: 20px 60px; */
       box-shadow: 10px 10px 20px rgba(39, 39, 39, 0.7);
-  }
+      transition: 0.5s;
+    }
+    .aboutdata1:hover{
+        box-shadow: none;
+        transition: 0.8s;
+    }
   .datadescrip{
       color: royalblue;
       align-items: center;
@@ -307,12 +317,17 @@ nav.sticky{
         display: none;
     }
     .aboutdata{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
     .aboutdata1{
-        width: 100%;
-        margin: auto;
-        margin-top: 30px;
+        width: 280px;
+        margin-top: 13px;
+        /* margin: auto;
+        margin-top: 30px; */
     }
     .footer{
         flex-direction: column;

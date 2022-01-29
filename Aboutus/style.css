@@ -104,6 +104,8 @@ nav.sticky{
   .aboutsection{
       background: url(../img/World\ Map.svg);
       background-size: cover;
+      height: 100%;
+      padding: 30px;
   }
   .aboutpara{
       text-align: center;
@@ -112,7 +114,7 @@ nav.sticky{
       color: rgb(54, 54, 54);
   }
   .para{
-    padding-top: 70px;
+    padding-top: 30px;
     width: 700px;
     font-size: 20px;
     text-align: center;
@@ -122,9 +124,12 @@ nav.sticky{
       width: 100%;
       display: flex;
       margin-top: 60px;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
   }
   .aboutdata1{
-      width: 33%;
+      width: 300px;
       height: 220px;
       padding: 30px;
       color: rgb(29, 27, 27);
@@ -132,7 +137,7 @@ nav.sticky{
       align-items: center;
       border-radius: 6px;
       text-align: center;
-      margin: 20px 60px;
+      /* margin: 20px 20px; */
       box-shadow: 10px 10px 20px rgba(39, 39, 39, 0.7);
       transition: 0.5s;
   }
@@ -293,12 +298,17 @@ nav.sticky{
         display: none;
     }
     .aboutdata{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
     .aboutdata1{
-        width: 100%;
-        margin: auto;
-        margin-top: 30px;
+        width: 280px;
+        margin-top: 13px;
+        /* margin: auto;
+        margin-top: 30px; */
     }
     .footer{
         flex-direction: column;
